@@ -1,0 +1,28 @@
+.content a:hover {
+    color: white !important;
+    background-color: var(--color-primary);
+    transition: 0.2s ease-in-out;
+}
+
+.content a {
+    color: white !important;
+    background-color: black;
+    padding: 5px;
+    border-radius: 2px;
+}
+
+.divider {
+    margin: auto;
+    width: 60%;
+    color: rgb(202, 196, 196);
+    margin-top: 20px;
+}
+
+.card:hover .divider  {
+    color: var(--color-primary);
+}
+
+.project-card:hover  {
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    transition: box-shadow 0.3s ease-in-out;
+}

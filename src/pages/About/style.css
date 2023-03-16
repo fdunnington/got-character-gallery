@@ -1,0 +1,17 @@
+#about {
+    text-align: center;
+    padding: 1em 0;
+    line-height: 2em;
+}
+
+ul {
+    list-style: none;
+}
+
+a:hover {
+    color: black;
+}
+
+.contact-link {
+    margin: 20px 5px;
+}

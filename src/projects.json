@@ -1,0 +1,38 @@
+[
+    {
+      "id": 1,
+      "name": "DAO Labs",
+      "image": "https://fdunnington.github.io/myPortfolio/assets/img/gallery/DAO%20Labs.png",
+      "link": "https://mydaolabs.com/pages/blog",
+      "Figma": "https://mydaolabs.com/pages/blog"
+    },
+    {
+      "id": 2,
+      "name": "Animaletics",
+      "image": "https://github.com/fdunnington/animaletics-api-app/raw/main/assets/images/animaletics%20screenshot.png",
+      "link": "https://dalvat.github.io/animaletics-api-app/",
+      "github": "https://github.com/fdunnington/animaletics-api-app"
+    },
+    {
+      "id": 3,
+      "name": "Weather Dashboard",
+      "image": "https://github.com/fdunnington/weather-dashboard/raw/main/assets/images/app-screenshot.png",
+      "link": "https://fdunnington.github.io/weather-dashboard/",
+      "github": "https://github.com/fdunnington/weather-dashboard"
+    },
+    {
+      "id": 4,
+      "name": "Daily Planner",
+      "image": "https://github.com/fdunnington/daily-planner-app/raw/main/assets/images/Screenshot%202023-01-31%20at%2016.39.45.png",
+      "link": "https://fdunnington.github.io/daily-planner-app/",
+      "github": "https://github.com/fdunnington/daily-planner-app"
+    },
+    {
+      "id": 5,
+      "name": "README Generator",
+      "image": "https://github.com/fdunnington/README-Generator/raw/main/images/ScreenshotREADME-generator.png",
+      "link": "https://fdunnington.github.io/README-Generator",
+      "github": "https://github.com/fdunnington/README-Generator"
+    }
+  ]
+  

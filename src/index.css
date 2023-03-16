@@ -1,13 +1,200 @@
+/* Fonts */
+:root {
+  --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-primary: "Inter", sans-serif;
+  --font-secondary: "Cardo", sans-serif;
+}
+
+/* Colors */
+/*Dark*/
+:root {
+  --color-default: #fafafa;
+  --color-primary: #20c997;
+  --color-secondary: #161718;
+  --dusky-grey: #45505b;
+  --background: black;
+  --background-opposite: white;
+}
+
+/*Light*/
+:root {
+  --color-default: #161718;
+  --color-primary: #20c997;
+  --color-secondary: #fafafa;
+  --dusky-grey: #45505b;  
+  --background: white;
+  --background-opposite: black;
+
+}
+
+/* Smooth scroll behavior */
+:root {
+  scroll-behavior: smooth;
+}
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
 body {
+  font-family: var(--font-default);
+  color: var(--color-default);
+  background-color: var(--background);
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.align-items-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  color: #32cf93;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-primary);
+}
+
+.strong {
+  font-weight: bold;
+}
+
+/*--------------------------------------------------------------
+# Page Header
+--------------------------------------------------------------*/
+.page-header {
+  min-height: 10vh;
+  position: relative;
+}
+
+.page-header h2 {
+  font-size: 56px;
+  font-weight: 500;
+  color: #fff;
+  font-family: var(--font-secondary);
+  margin-top: 0;
+}
+
+@media (max-width: 768px) {
+  .page-header h2 {
+    font-size: 36px;
+  }
+}
+
+.page-header p {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.page-header .cta-btn {
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 14px;
+  display: inline-block;
+  padding: 12px 40px;
+  border-radius: 4px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: 0.3s;
+  color: #fff;
+  background: var(--color-primary);
+}
+
+.page-header .cta-btn:hover {
+  background: #2cbc85;
+}
+
+/*--------------------------------------------------------------
+# Scroll top button
+--------------------------------------------------------------*/
+.scroll-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: -15px;
+  z-index: 99999;
+  background: var(--color-primary);
+  width: 44px;
+  height: 44px;
+  border-radius: 50px;
+  transition: all 0.4s;
+}
+
+.scroll-top i {
+  font-size: 24px;
+  color: #fff;
+  line-height: 0;
+}
+
+.scroll-top:hover {
+  background: rgba(39, 167, 118, 0.8);
+  color: #fff;
+}
+
+.scroll-top.active {
+  visibility: visible;
+  opacity: 1;
+  bottom: 15px;
+}
+
+
+/*--------------------------------------------------------------
+# Sections & Section Header
+--------------------------------------------------------------*/
+.section-header {
+  padding-bottom: 40px;
+}
+
+.section-header h2 {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0;
+  line-height: 1px;
+  margin: 0 0 5px 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: var(--font-primary);
+}
+
+.section-header h2::after {
+  content: "";
+  width: 120px;
+  height: 1px;
+  display: inline-block;
+  background: #5bd9a9;
+  margin: 4px 10px;
+}
+
+.section-header p {
+  margin: 0;
+  margin: 0;
+  font-size: 36px;
+  font-weight: 700;
+  font-family: var(--font-secondary);
+  color: #fff;
 }
